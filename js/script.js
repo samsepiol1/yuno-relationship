@@ -1,5 +1,9 @@
 /* global monogatari */
 
+
+
+
+
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
 	'Help': {
@@ -9,6 +13,7 @@ monogatari.action ('message').messages ({
 			<p><a href='https://developers.monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p>
 			<p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>
 			<p><a>Info about the characters</p>
+			
 		`
 	}
 });
@@ -84,7 +89,8 @@ monogatari.characters ({
         sprites: {
             normal: 'Yuno.png'
         }
-    }
+	}
+	
 });
 
 monogatari.script ({
@@ -152,13 +158,16 @@ monogatari.script ({
 	'Yes': [
 		'y Que legal meu amor!',
 		'y Eu gosto muito de falar com você todos os dias!',
-		'y Tenho que ir agora, meus amigos estão esperando!',
+		'y Acho que você precisa ir para o trabalho agora né ?',
+		'y Seria muito legal se eu pudesse ir com você!!',
+		'y Eu sempre vou estar aqui meu amor, todos os dias. Em todo lugar, mas eu preciso saber onde você está meu amor',
+
 		'end'
 	],
 
 	'No': [
 
-		'y Você pode fazer agora.',
+		'y Você tem que escovar seu dentes, amor. Eu me importo bastante com sua saúde bucal',
 
 		'show message Help',
 
